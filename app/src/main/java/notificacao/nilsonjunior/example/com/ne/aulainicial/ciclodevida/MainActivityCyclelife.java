@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import notificacao.nilsonjunior.example.com.ne.aulainicial.R;
@@ -26,18 +27,16 @@ public class MainActivityCyclelife extends Activity {
         Toast.makeText(getApplicationContext(), "onCreate metodo", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_main_cyclelife);
 
-        botao = (Button) findViewById(R.id.buttonid);
-
+        botao = (Button) findViewById(R.id.buttonLoginId);
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-                //startActivity( new Intent(MainActivityCyclelife.this,SegundaActivity.class));
+                startActivity(new Intent(MainActivityCyclelife.this, SegundaActivity.class));
             }
         });
 
     }
+
 
 
     @Override

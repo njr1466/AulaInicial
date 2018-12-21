@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="notificacao.nilsonjunior.example.com.ne.aulainicial.widgets.MainActivitySeekbar">
+
+    <SeekBar
+        android:id="@+id/seekBarId"
+        android:layout_width="350dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="33dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:max="200"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarDiscreteId"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBarId"
+        android:layout_alignStart="@+id/seekBarId"
+        android:layout_below="@+id/seekBarId"
+        android:layout_marginTop="33dp"
+        android:max="10"
+        android:progress="3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBarDiscreteId"
+        android:layout_alignStart="@+id/seekBarDiscreteId"
+        android:layout_below="@+id/seekBarDiscreteId"
+        android:layout_marginTop="12dp"
+        android:text="    0      1       2       3       4       5      6       7       8       9      10" />
+
+    <Switch
+        android:id="@+id/switchId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="47dp"
+        android:checked="true"
+        android:text="Ligado" />
+</RelativeLayout>

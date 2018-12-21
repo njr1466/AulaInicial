@@ -2,8 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context="notificacao.nilsonjunior.example.com.ne.aulainicial.ciclodevida.SegundaActivity">
 
     <TextView
@@ -15,4 +15,12 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="158dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="363dp"
+        android:layout_height="394dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="11dp" />
 </android.support.constraint.ConstraintLayout>

@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="notificacao.nilsonjunior.example.com.ne.aulainicial.ciclodevida.MainActivityCyclelife">
 
-    <Button
-        android:id="@+id/buttonid"
+
+    <ImageButton
+        android:id="@+id/imageButtonCasaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SEGUNDA TELA"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="148dp" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="44dp"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonLoginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="13dp"
+        android:text="Login" />
+
+</RelativeLayout>
